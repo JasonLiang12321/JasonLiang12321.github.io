@@ -10,6 +10,7 @@
     margin: 0;
     padding:0;
     cursor: none !important;
+    
 }
 
 .cursor{
@@ -125,26 +126,94 @@
     position: absolute;
     width: 100%;
     border-radius:7px;
+    transition: all 0.3s ease;
 
 }
-.ProjectText{
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-}
-
-.ProjectTitle{
-    font-size: 250%;
-    display:flex;
-    justify-content: center;
-    text-decoration: underline;
-
-
-}
+.ProjectText {
+    font-family: "Poppins";
+    color: black;
+    font-size: 135%;
+    line-height: 1.6;
+    max-width: 600px;
+    padding: 20px 25px;
+    position:relative;
+    top:34.5%;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .ProjectText:hover {
+    transform: translateY(-3%);
+  }
+  
+  .ProjectTitle {
+    font-size: 140%;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1%;
+    color: #ff8c00;
+    display: block;
+    margin-bottom: 3%;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .ProjectTitle:hover {
+    color: #ffd580;
+  }
+  
 .ImageContainer img{
     width: 100%;
     height: auto;
     transition: all 0.3s ease;
 }
+.BottomText{
+    width:100%;
+    height:7.5%;
+    position:absolute;
+    top:92.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.05);
+    cursor:none;
+    transition: all 0.3s ease;
+}
+.BottomText:hover{
+    background: rgba(0, 0, 0, 0.1); 
+}
+.skills{
+    
+    display: inline-block;
+    margin-top:5%;
+    font-size: 80%;
+    font-style: italic;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: gray;
+    transition: all 0.3s ease;
+    text-shadow:  0 0 1px rgba(0,0,0, 0.7);
+}
+.skills:hover{
+    transform: translateY(-3px);
+    text-shadow:  0 0 3px rgba(255,255,255, 0.7);
+}
+.GithubLink {
+    font-family: "Poppins", sans-serif;
+    font-size: 100%;
+    padding: 2% 3%;
+    text-decoration: none;
+    color: rgba(255,0,0,0.5);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    border-radius: 12px;
+    cursor: none;
+    letter-spacing: 5%;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-left: 10%;
+  }
+  
+  .GithubLink:hover {
+    color: #fff3e0;
+    background: rgba(255, 140, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  

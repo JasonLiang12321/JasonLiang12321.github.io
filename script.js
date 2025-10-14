@@ -5,6 +5,7 @@ const Background2 = document.querySelector(".bg2")
 const PortfolioPage = document.querySelector(".PortfolioPage")
 const ReturnButton = document.querySelector(".Return")
 const PortfolioHolder = document.querySelectorAll(".PortfolioHolder")
+const GithubButtons = document.querySelectorAll(".GithubLink");
 let IsInFocusMode = false;
 let OneInFocusMode;
 function hoverover(e){
@@ -50,10 +51,10 @@ ReturnButton.addEventListener('click', ()=>{
 
 })
 
-PortfolioHolder.forEach(el=>{
-    
+GithubButtons.forEach(el=>{
+    el.addEventListener("mousemove",hoverover);
+    el.addEventListener("mouseleave",hoverleave);
 })
-
 Title.addEventListener('click', ()=>{
     Background.style.opacity = 0;
     Background.style.pointerEvents = "none";
