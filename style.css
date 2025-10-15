@@ -39,26 +39,45 @@
 .TitlePage{
     transition: all 0.3s ease;
 }
-.TitleText{
-    position:absolute;
-    top:42%;
-    left:27%;
+.TitleTextWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .TitleText {
     font-family: "Wlms";
-    color:antiquewhite;
+    color: antiquewhite;
     transition: all 0.3s ease;
     transform-origin: center;
-}
-.TitleText p{
+    white-space: nowrap;
+  }
+  
+  .TitleText:hover {
+    transform: scale(1.3) skew(5deg, 5deg);
+    color: rgba(255,235,205,0.5);
+  }
+  .MobileNote{
+    display:none;
+    pointer-events: none;
+    position:fixed;
+    color: white;
+    z-index:100;
+    font-size: 1rem;
+    transition: opacity 1s ease;
+    word-wrap: break-word;
+  }
+  .Title {
+    font-size: clamp(2rem, 8vw, 7rem);
     margin:0;
-    text-align: center; 
-}
-.Title{
-    font-size: 800%;
-}
-.Subtitle{
-    font-size: 400%;
-
-}
+  }
+  .Subtitle {
+    margin:0;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+  }
+  
 .TitleText.from-left:hover{
     transform:scale(1.3) skew(5deg,5deg);
     color: rgba(255,235,205,0.5);
@@ -88,6 +107,7 @@
     height: 100%;
     pointer-events: none;
     transition: all 1s ease;
+    overflow-y: auto;
 }
 .bg2{
     position: fixed; top:0; left:0;
@@ -101,13 +121,13 @@
     display: inline-block;
     position:relative;
     top:2.5%;
-    
     left:5%;
     transform-origin: center center;
     font-family: "Wlms";
-    font-size:200%;
+    font-size:max(2vw,16px);
     transition: all 0.3s ease;
     z-index: 100;
+    margin-bottom: 3vh;
 }
 .Return:hover{
     color: rgba(255,235,205,0.5);
@@ -118,7 +138,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     padding: 2%;
-    gap:2% 30px;
+    gap:2% 20px;
     max-width: calc(3 * 400px + 30); 
     justify-content: start; 
 
@@ -131,8 +151,8 @@
     border-width: 5px;
     border-style: solid;
     position: relative;
-    height: 72vh;
-    width: 400px;
+    height: clamp(140px,70vh,800px);
+    width: clamp(30px,400px,70vw);
     background-color: antiquewhite;
     border-radius: 10px;
     z-index: 0;
@@ -159,15 +179,17 @@
     border-radius:7px;
     transition: all 0.3s ease;
     overflow: hidden;
+    margin:0;
 
 }
 .ProjectText {
+    margin-top:5px;
     font-family: "Poppins";
     color: black;
-    font-size: clamp(14px, 3vw, 22px);
+    font-size: clamp(13px, 3vw, 22px);
     line-height: 1.6;
     max-width: 600px;
-    padding: 20px 20px;
+    padding: min(1.5vw, 20px);
     position:relative;
     top:34.5%;
     box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.3);
@@ -197,6 +219,7 @@
     width: 100%;
     height: auto;
     transition: all 0.3s ease;
+
 }
 .BottomText{
     width:100%;
@@ -214,8 +237,7 @@
 .skills{
     
     display: inline-block;
-    margin-top:5%;
-    font-size: clamp(10px, 2vw, 14px);
+    font-size:  min(3vw, 15px);
     font-style: italic;
     margin-left: 5%;
     margin-right: 10%;
@@ -229,7 +251,7 @@
 }
 .GithubLink {
     font-family: "Poppins", sans-serif;
-    font-size: clamp(12px, 2.5vw, 18px);
+    font-size: min(3vw, 18px);
     padding: 2% 3%;
     text-decoration: none;
     color: rgba(255,0,0,0.5);
@@ -251,3 +273,9 @@
     transform: translateY(-2px);
   }
   
+  @media (max-width: 768px) {
+    .MobileNote{
+        display:block;
+    }
+   
+  }

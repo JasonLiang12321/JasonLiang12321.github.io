@@ -1,4 +1,5 @@
 const Title = document.querySelector(".TitleText")
+const TitleWrapper = document.querySelector(".TitleTextWrapper")
 const Cursor = document.querySelector(".cursor")
 const Background = document.querySelector(".bg")
 const Background2 = document.querySelector(".bg2")
@@ -6,6 +7,8 @@ const PortfolioPage = document.querySelector(".PortfolioPage")
 const ReturnButton = document.querySelector(".Return")
 const PortfolioHolder = document.querySelectorAll(".PortfolioHolder")
 const GithubButtons = document.querySelectorAll(".GithubLink");
+const MobileNote = document.querySelector(".MobileNote");
+
 let IsInFocusMode = false;
 let OneInFocusMode;
 function hoverover(e){
@@ -40,14 +43,15 @@ ReturnButton.addEventListener('click', ()=>{
     Background.style.pointerEvents = "auto";
     PortfolioPage.style.opacity = 0;
     document.body.style.overflowY = "hidden";
+    MobileNote.style.opacity = 1;
     PortfolioHolder.forEach(el=>{
         el.style.opacity = 0;
         el.style.pointerEvents = "none";
     });
     IsInFocusMode = false;
     PortfolioPage.style.pointerEvents = "none";
-    Title.style.opacity = 1;
-    Title.style.pointerEvents = "auto";
+    TitleWrapper.style.opacity = 1;
+    TitleWrapper.style.pointerEvents = "auto";
 
 
 })
@@ -59,6 +63,7 @@ GithubButtons.forEach(el=>{
 Title.addEventListener('click', ()=>{
     Background.style.opacity = 0;
     Background.style.pointerEvents = "none";
+    MobileNote.style.opacity = 0;
     PortfolioPage.style.opacity = 1;
     document.body.style.overflowY = "auto";
     
@@ -67,8 +72,8 @@ Title.addEventListener('click', ()=>{
         el.style.pointerEvents = "auto";
     });
     PortfolioPage.style.pointerEvents = "auto";
-    Title.style.opacity = 0;
-    Title.style.pointerEvents = "none";
+    TitleWrapper.style.opacity = 0;
+    TitleWrapper.style.pointerEvents = "none";
     
 
 })
