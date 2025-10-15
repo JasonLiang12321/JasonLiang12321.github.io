@@ -39,6 +39,7 @@ ReturnButton.addEventListener('click', ()=>{
     Background.style.opacity = 1;
     Background.style.pointerEvents = "auto";
     PortfolioPage.style.opacity = 0;
+    document.body.style.overflowY = "hidden";
     PortfolioHolder.forEach(el=>{
         el.style.opacity = 0;
         el.style.pointerEvents = "none";
@@ -59,6 +60,7 @@ Title.addEventListener('click', ()=>{
     Background.style.opacity = 0;
     Background.style.pointerEvents = "none";
     PortfolioPage.style.opacity = 1;
+    document.body.style.overflowY = "auto";
     
     PortfolioHolder.forEach(el=>{
         el.style.opacity=1;

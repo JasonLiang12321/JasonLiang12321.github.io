@@ -3,6 +3,16 @@
     src: url("Wlmsl copy.ttf");
 }
 
+::-webkit-scrollbar {
+    width: 0px;  
+  }
+
+ * {
+    scrollbar-width: none;
+   
+}
+
+
  html,
  body{
     height : 100%;
@@ -10,6 +20,8 @@
     margin: 0;
     padding:0;
     cursor: none !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -25,7 +37,7 @@
 
 }
 .TitlePage{
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 .TitleText{
     position:absolute;
@@ -59,10 +71,15 @@
 .bg{
     position: fixed; top:0; left:0;
     width:100%; height:100%;
-    background:url(OvertaleTitleScreenv4.png);
     background-size:cover;
+    background-position: center top;
     transition: all 1s ease;
     z-index: -1;
+}
+.OvertaleImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .PortfolioPage{
     opacity:0;
@@ -80,9 +97,12 @@
 }
 .Return{
     color:antiquewhite;
-    position:absolute;
+    display: inline-block;
+    position:relative;
     top:2.5%;
+    
     left:5%;
+    transform-origin: center center;
     font-family: "Wlms";
     font-size:200%;
     transition: all 0.3s ease;
@@ -90,16 +110,20 @@
 }
 .Return:hover{
     color: rgba(255,235,205,0.5);
-    scale: 1.2;
+    transform: scale(1.2);
+
 }
 .Portfolio {
-  position: relative;
-  top: 15%;
-  display: grid;
-  gap: 2%;
-  padding: 2%;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    padding: 2%;
+    gap:2% 30px;
+    max-width: calc(3 * 400px + 30); 
+    justify-content: start; 
+
+  }
+  
+  
 
 .PortfolioHolder {
     border-color:rgba(255,0,0,0.5);
@@ -107,14 +131,19 @@
     border-style: solid;
     position: relative;
     height: 40vw;
-    width: 25vw;
+    width: 400px;
     background-color: antiquewhite;
     border-radius: 10px;
     z-index: 0;
     transition: all 0.3s ease;
+    margin-bottom: 10%;
     
     
     
+}
+#Mandelbrot{
+    position:relative;
+    top:-30px;
 }
 .PortfolioHolder:hover{
     transform: scale(1.1);
@@ -125,20 +154,22 @@
 .ImageContainer{
     position: absolute;
     width: 100%;
+    height: 38%;
     border-radius:7px;
     transition: all 0.3s ease;
+    overflow: hidden;
 
 }
 .ProjectText {
     font-family: "Poppins";
     color: black;
-    font-size: 135%;
+    font-size: min(3vw,135%);
     line-height: 1.6;
     max-width: 600px;
-    padding: 20px 25px;
+    padding: 20px 20px;
     position:relative;
     top:34.5%;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
   }
   
@@ -183,7 +214,7 @@
     
     display: inline-block;
     margin-top:5%;
-    font-size: 80%;
+    font-size: min(2vw,80%);
     font-style: italic;
     margin-left: 5%;
     margin-right: 10%;
@@ -197,7 +228,7 @@
 }
 .GithubLink {
     font-family: "Poppins", sans-serif;
-    font-size: 100%;
+    font-size: min(2.5vw,100%);
     padding: 2% 3%;
     text-decoration: none;
     color: rgba(255,0,0,0.5);
@@ -208,7 +239,9 @@
     letter-spacing: 5%;
     transition: all 0.3s ease;
     font-weight: 600;
-    margin-left: 10%;
+    position:absolute;
+    top:10%;
+    left: 65%;
   }
   
   .GithubLink:hover {
