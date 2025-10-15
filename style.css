@@ -75,6 +75,7 @@
     background-position: center top;
     transition: all 1s ease;
     z-index: -1;
+    overflow:hidden;
 }
 .OvertaleImg{
     width: 100%;
@@ -130,7 +131,7 @@
     border-width: 5px;
     border-style: solid;
     position: relative;
-    height: 40vw;
+    height: 72vh;
     width: 400px;
     background-color: antiquewhite;
     border-radius: 10px;
@@ -163,7 +164,7 @@
 .ProjectText {
     font-family: "Poppins";
     color: black;
-    font-size: min(3vw,135%);
+    font-size: clamp(14px, 3vw, 22px);
     line-height: 1.6;
     max-width: 600px;
     padding: 20px 20px;
@@ -214,7 +215,7 @@
     
     display: inline-block;
     margin-top:5%;
-    font-size: min(2vw,80%);
+    font-size: clamp(10px, 2vw, 14px);
     font-style: italic;
     margin-left: 5%;
     margin-right: 10%;
@@ -228,7 +229,7 @@
 }
 .GithubLink {
     font-family: "Poppins", sans-serif;
-    font-size: min(2.5vw,100%);
+    font-size: clamp(12px, 2.5vw, 18px);
     padding: 2% 3%;
     text-decoration: none;
     color: rgba(255,0,0,0.5);
@@ -241,7 +242,7 @@
     font-weight: 600;
     position:absolute;
     top:10%;
-    left: 65%;
+    left: 63%;
   }
   
   .GithubLink:hover {
