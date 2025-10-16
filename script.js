@@ -8,9 +8,10 @@ const ReturnButton = document.querySelector(".Return")
 const PortfolioHolder = document.querySelectorAll(".PortfolioHolder")
 const GithubButtons = document.querySelectorAll(".GithubLink");
 const MobileNote = document.querySelector(".MobileNote");
-
-let IsInFocusMode = false;
-let OneInFocusMode;
+const PhotoGalleryButton = document.querySelector(".PhotoGalleryButton");
+const PhotoGallery = document.querySelector(".PhotoGallery");
+const ReturnToPortfolio = document.querySelector(".ReturnToPortfolio");
+const ImageGalleryContainers = document.querySelectorAll(".IndividualPhotoContainer")
 function hoverover(e){
     Cursor.style.width = "30px";
     Cursor.style.height = "30px";
@@ -55,6 +56,29 @@ ReturnButton.addEventListener('click', ()=>{
 
 
 })
+
+PhotoGalleryButton.addEventListener('mousemove',hoverover);
+PhotoGalleryButton.addEventListener('mouseleave',hoverleave);
+PhotoGalleryButton.addEventListener('click', ()=>{
+    PortfolioPage.style.opacity = 0;
+    PortfolioPage.style.pointerEvents = "none";
+    PhotoGallery.style.opacity = 1;
+    PhotoGallery.style.pointerEvents = "auto";
+})
+ReturnToPortfolio.addEventListener('mousemove',hoverover);
+ReturnToPortfolio.addEventListener('mouseleave',hoverleave);
+ReturnToPortfolio.addEventListener('click', ()=>{
+    PortfolioPage.style.opacity = 1;
+    PortfolioPage.style.pointerEvents = "auto";
+    PhotoGallery.style.opacity = 0;
+    PhotoGallery.style.pointerEvents = "none";
+})
+
+ImageGalleryContainers.forEach(el=>{
+    el.addEventListener("mousemove",hoverover);
+    el.addEventListener("mouseleave",hoverleave);
+})
+
 
 GithubButtons.forEach(el=>{
     el.addEventListener("mousemove",hoverover);
