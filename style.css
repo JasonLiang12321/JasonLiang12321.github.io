@@ -1,381 +1,381 @@
 @font-face{
-    font-family: "Wlms";
-    src: url("Wlmsl copy.ttf");
+  font-family: "Wlms";
+  src: url("Wlmsl copy.ttf");
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  
-  }
+  width: 0px;  
+}
 
- * {
-    scrollbar-width: none;
-   
+* {
+  scrollbar-width: none;
+ 
 }
 
 
- html,
- body{
-    height : 100%;
-    width:100%;
-    margin: 0;
-    padding:0;
-    cursor: none !important;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    
+html,
+body{
+  height : 100%;
+  width:100%;
+  margin: 0;
+  padding:0;
+  cursor: none !important;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
 }
 
 .cursor{
-    position: fixed;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(255,140,0,0.75);
-    border-radius: 50%;
-    pointer-events: none;
-    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
-    z-index: 9999;
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255,140,0,0.75);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  z-index: 9999;
 
 }
 .TitlePage{
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .TitleTextWrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .TitleText {
-    font-family: "Wlms";
-    color: antiquewhite;
-    transition: all 0.3s ease;
-    transform-origin: center;
-    white-space: nowrap;
-  }
-  
-  .TitleText:hover {
-    transform: scale(1.3) skew(5deg, 5deg);
-    color: rgba(255,235,205,0.5);
-  }
-  .MobileNote{
-    display:none;
-    pointer-events: none;
-    position:fixed;
-    color: white;
-    z-index:100;
-    font-size: 1rem;
-    transition: opacity 1s ease;
-    word-wrap: break-word;
-  }
-  .Title {
-    font-size: clamp(2rem, 8vw, 7rem);
-    margin:0;
-  }
-  .Subtitle {
-    margin:0;
-    font-size: clamp(1.5rem, 4vw, 4rem);
-  }
-  
-.TitleText.from-left:hover{
-    transform:scale(1.3) skew(5deg,5deg);
-    color: rgba(255,235,205,0.5);
-}
-.TitleText.from-right:hover{
-    transform:scale(1.3) skew(-5deg,-5deg);
-    color: rgba(255,235,205,0.5);
-}
-
-.bg{
-    position: fixed; top:0; left:0;
-    width:100%; height:100%;
-    background-size:cover;
-    background-position: center top;
-    transition: all 1s ease;
-    z-index: -1;
-    overflow:hidden;
-}
-.OvertaleImg{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.PortfolioPage{
-    opacity:0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    transition: all 1s ease;
-    overflow-y: auto;
-}
-.bg2{
-    position: fixed; top:0; left:0;
-    width:100%; height:100%;
-    background: black;
-    transition: all 1s ease;
-    z-index: -1;
-}
-.Return{
-    color:antiquewhite;
-    display: inline-block;
-    position:relative;
-    left:5%;
-    transform-origin: center center;
-    font-family: "Wlms";
-    font-size:max(2vw,10px);
-    transition: all 0.3s ease;
-    z-index: 100;
-    margin-bottom:10vh;
-    
-}
-.Return:hover{
-    color: rgba(255,235,205,0.5);
-    transform: scale(1.2);
-
-}
-.Portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-    padding: 2%;
-    position:relative;
-    top:-10%;
-    gap:2% 20px;
-    max-width: calc(3 * 400px + 30); 
-    justify-content: start; 
-
-  }
-  
-  
-
-.PortfolioHolder {
-    border-color:rgba(255,0,0,0.5);
-    border-width: 5px;
-    border-style: solid;
-    position: relative;
-    height: clamp(140px,70vh,100vw);
-    width: clamp(30px,400px,70vw);
-    background-color: antiquewhite;
-    border-radius: 10px;
-    z-index: 0;
-    transition: all 0.3s ease;
-    margin-bottom: 10%;
-    
-    
-    
-}
-#Mandelbrot{
-    position:relative;
-    top:-30px;
-}
-.PortfolioHolder:hover{
-    transform: scale(1.1);
-    border-color:rgb(176, 224, 230);
-    
-}
-
-.ImageContainer{
-    position: absolute;
-    width: 100%;
-    height: 38%;
-    border-radius:7px;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    margin:0;
-
-}
-.ProjectText {
-    margin-top:5px;
-    font-family: "Poppins";
-    color: black;
-    font-size: clamp(2vh, 3vw, 22px);
-    line-height: 1.6;
-    max-width: 600px;
-    padding: min(1.5vw, 20px);
-    position:relative;
-    top:34.5%;
-    box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-  }
-  
-  .ProjectText:hover {
-    transform: translateY(-3%);
-  }
-  
-  .ProjectTitle {
-    font-size: 140%;
-    font-weight: 600;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-    letter-spacing: 1%;
-    color: #ff8c00;
-    display: block;
-    margin-bottom: 3%;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  
-  .ProjectTitle:hover {
-    color: #ffd580;
-  }
-  
-.ImageContainer img{
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-  
-
-}
-.BottomText{
-    width:100%;
-    height:7.5%;
-    position:absolute;
-    top:92.5%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background: rgba(0, 0, 0, 0.05);
-    cursor:none;
-    transition: all 0.3s ease;
-}
-.BottomText:hover{
-    background: rgba(0, 0, 0, 0.1); 
-}
-.skills{
-    
-    display: inline-block;
-    font-size:  min(3vw, 15px);
-    font-style: italic;
-    margin-left: 5%;
-    margin-right: 10%;
-    color: gray;
-    transition: all 0.3s ease;
-    text-shadow:  0 0 1px rgba(0,0,0, 0.7);
-}
-.skills:hover{
-    transform: translateY(-3px);
-    text-shadow:  0 0 3px rgba(255,255,255, 0.7);
-}
-.GithubLink {
-    font-family: "Poppins", sans-serif;
-    font-size: min(3vw, 18px);
-    padding: 2% 3%;
-    text-decoration: none;
-    color: rgba(255,0,0,0.5);
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 0, 0, 0.4);
-    border-radius: 12px;
-    cursor: none;
-    letter-spacing: 5%;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    position:absolute;
-    top:10%;
-    left: 63%;
-  }
-  
-  .GithubLink:hover {
-    color: #fff3e0;
-    background: rgba(255, 140, 0, 0.15);
-    transform: translateY(-2px);
-  }
-  .PhotoGalleryButton {
-    font-size: max(2vw,10px);
-    position:relative;
-    display:inline-block;
-    left:60vw;
-    color: white;
-    border-radius: 8px;
-    white-space: nowrap;
-    width: fit-content;
-    margin: 0;
-    transition: all 0.3s ease;
-  }
-  
-  .PhotoGalleryButton:hover {
-    transform: scale(1.2);
-    
-  }
-  .PhotoGallery{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position:fixed;
-    top:0;
-    left:0;
-    background: antiquewhite;
-    pointer-events: none;
-    transition: all 1s ease;
-    overflow-y: auto;
-    z-index: 10;
-
-  }
-  .ReturnToPortfolio{
-    color: rgb(255,30,20);
-    display: inline-block;
-    position:relative;
-    left:5%;
-    transform-origin: center center;
-    font-family: "Wlms";
-    font-size:max(2vw,16px);
-    transition: all 0.3s ease;
-    z-index: 100;
-    
-}
-.ReturnToPortfolio:hover{
-    color: rgba(255,0,0,0.5);
-    transform: scale(1.2);
-
-}
-  @media (max-width: 768px) {
-    .MobileNote{
-        display:block;
-    }
-    .PhotoGalleryButton{
-      left:45vw;
-    }
-    .ProjectText{
-      line-height:1.2;
-    }
-    .ProjectTitle{
-      margin-top:2%;
-    }
-   
-  }
-.PhotoImageContainer{
-  width: 90%;
-  margin: 0 auto;
-  columns: 3 300px;
-  column-gap: 2vw;
-}
-.PhotoImageContainer div img{
-  display:block;
-  margin-block: 2vh;
-  width:100%;
-  transition: all 0.3s ease;
-  border-radius: 7px;
-}
-.PhotoImageContainer div img:hover{
-    transform: scale(1.05);
-    filter:brightness(20%);
-}
-.IndividualPhotoContainer{
-  position:relative;
-  border-radius:7px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-}
-.IndividualPhotoContainer:hover .Overlay{
-  opacity:1;
-}
-.Overlay{
-  position: absolute;       
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: antiquewhite;
-  font-size: 100%;
-  opacity:0;
-  transition:all 0.3s ease;
-  pointer-events: none;
   text-align: center;
+}
+
+.TitleText {
+  font-family: "Wlms";
+  color: antiquewhite;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  white-space: nowrap;
+}
+
+.TitleText:hover {
+  transform: scale(1.3) skew(5deg, 5deg);
+  color: rgba(255,235,205,0.5);
+}
+.MobileNote{
+  display:none;
   pointer-events: none;
+  position:fixed;
+  color: white;
+  z-index:100;
+  font-size: 1rem;
+  transition: opacity 1s ease;
+  word-wrap: break-word;
+}
+.Title {
+  font-size: clamp(2rem, 8vw, 7rem);
+  margin:0;
+}
+.Subtitle {
+  margin:0;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+.TitleText.from-left:hover{
+  transform:scale(1.3) skew(5deg,5deg);
+  color: rgba(255,235,205,0.5);
+}
+.TitleText.from-right:hover{
+  transform:scale(1.3) skew(-5deg,-5deg);
+  color: rgba(255,235,205,0.5);
+}
+
+.bg{
+  position: fixed; top:0; left:0;
+  width:100%; height:100%;
+  background-size:cover;
+  background-position: center top;
+  transition: all 1s ease;
+  z-index: -1;
+  overflow:hidden;
+}
+.OvertaleImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.PortfolioPage{
+  opacity:0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: all 1s ease;
+  overflow-y: auto;
+}
+.bg2{
+  position: fixed; top:0; left:0;
+  width:100%; height:100%;
+  background: black;
+  transition: all 1s ease;
+  z-index: -1;
+}
+.Return{
+  color:antiquewhite;
+  display: inline-block;
+  position:relative;
+  left:5%;
+  transform-origin: center center;
+  font-family: "Wlms";
+  font-size:max(2vw,10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  margin-bottom:10vh;
+  
+}
+.Return:hover{
+  color: rgba(255,235,205,0.5);
+  transform: scale(1.2);
+
+}
+.Portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  padding: 2%;
+  position:relative;
+  top:-10%;
+  gap:2% 20px;
+  max-width: calc(3 * 400px + 30); 
+  justify-content: start; 
 
 }
 
 
+
+.PortfolioHolder {
+  border-color:rgba(255,0,0,0.5);
+  border-width: 5px;
+  border-style: solid;
+  position: relative;
+  height: clamp(140px,70vh,100vw);
+  width: clamp(30px,400px,70vw);
+  background-color: antiquewhite;
+  border-radius: 10px;
+  z-index: 0;
+  transition: all 0.3s ease;
+  margin-bottom: 10%;
+  
+  
+  
+}
+#Mandelbrot{
+  position:relative;
+  top:-30px;
+}
+.PortfolioHolder:hover{
+  transform: scale(1.1);
+  border-color:rgb(176, 224, 230);
+  
+}
+
+.ImageContainer{
+  position: absolute;
+  width: 100%;
+  height: 38%;
+  border-radius:7px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin:0;
+
+}
+.ProjectText {
+  margin-top:5px;
+  font-family: "Poppins";
+  color: black;
+  font-size: clamp(2vh, 3vw, 22px);
+  line-height: 1.6;
+  max-width: 600px;
+  padding: min(1.5vw, 20px);
+  position:relative;
+  top:34.5%;
+  box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ProjectText:hover {
+  transform: translateY(-3%);
+}
+
+.ProjectTitle {
+  font-size: 140%;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  letter-spacing: 1%;
+  color: #ff8c00;
+  display: block;
+  margin-bottom: 3%;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.ProjectTitle:hover {
+  color: #ffd580;
+}
+
+.ImageContainer img{
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+
+
+}
+.BottomText{
+  width:100%;
+  height:7.5%;
+  position:absolute;
+  top:92.5%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.05);
+  cursor:none;
+  transition: all 0.3s ease;
+}
+.BottomText:hover{
+  background: rgba(0, 0, 0, 0.1); 
+}
+.skills{
+  
+  display: inline-block;
+  font-size:  min(3vw, 15px);
+  font-style: italic;
+  margin-left: 5%;
+  margin-right: 10%;
+  color: gray;
+  transition: all 0.3s ease;
+  text-shadow:  0 0 1px rgba(0,0,0, 0.7);
+}
+.skills:hover{
+  transform: translateY(-3px);
+  text-shadow:  0 0 3px rgba(255,255,255, 0.7);
+}
+.GithubLink {
+  font-family: "Poppins", sans-serif;
+  font-size: min(3vw, 18px);
+  padding: 2% 3%;
+  text-decoration: none;
+  color: rgba(255,0,0,0.5);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 12px;
+  cursor: none;
+  letter-spacing: 5%;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  position:absolute;
+  top:10%;
+  left: 63%;
+}
+
+.GithubLink:hover {
+  color: #fff3e0;
+  background: rgba(255, 140, 0, 0.15);
+  transform: translateY(-2px);
+}
+.PhotoGalleryButton {
+  font-size: max(2vw,10px);
+  position:relative;
+  display:inline-block;
+  left:60vw;
+  color: white;
+  border-radius: 8px;
+  white-space: nowrap;
+  width: fit-content;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.PhotoGalleryButton:hover {
+  transform: scale(1.2);
+  
+}
+.PhotoGallery{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background: antiquewhite;
+  pointer-events: none;
+  transition: all 1s ease;
+  overflow-y: auto;
+  z-index: 10;
+
+}
+.ReturnToPortfolio{
+  color: rgb(255,30,20);
+  display: inline-block;
+  position:relative;
+  left:5%;
+  transform-origin: center center;
+  font-family: "Wlms";
+  font-size:max(2vw,16px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  
+}
+.ReturnToPortfolio:hover{
+  color: rgba(255,0,0,0.5);
+  transform: scale(1.2);
+
+}
+@media (max-width: 768px) {
+  .MobileNote{
+      display:block;
+  }
+  .PhotoGalleryButton{
+    left:45vw;
+  }
+  .ProjectText{
+    line-height:1.2;
+  }
+  .ProjectTitle{
+    margin-top:2%;
+  }
+ 
+}
+.PhotoImageContainer{
+width: 90%;
+margin: 0 auto;
+columns: 3 300px;
+column-gap: 2vw;
+}
+.PhotoImageContainer div img,
+.PhotoImageContainer div video{
+display:block;
+margin-block: 2vh;
+width:100%;
+transition: all 0.3s ease;
+border-radius: 7px;
+}
+.PhotoImageContainer div img:hover,
+.PhotoImageContainer div video:hover{
+  transform: scale(1.05);
+  filter:brightness(20%);
+}
+.IndividualPhotoContainer{
+position:relative;
+border-radius:7px;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+.IndividualPhotoContainer:hover .Overlay{
+opacity:1;
+}
+.Overlay{
+position: absolute;       
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: antiquewhite;
+font-size: 100%;
+opacity:0;
+transition:all 0.3s ease;
+pointer-events: none;
+text-align: center;
+pointer-events: none;
+
+}

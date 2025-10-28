@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="cursor">
-    </div
+    </div>
     <div class = "TitlePage">
       <p class="MobileNote">Note: Some features may not be available on mobile.</p>
     <div class="bg"><img src = "OvertaleTitleScreenv4.png" class ="OvertaleImg"></div>
@@ -28,8 +28,15 @@
     </div>
     <div class = "PhotoGalleryButton"><p style="font-family: Wlms">To Photo Gallery</p></div>
     <div class = "Portfolio">
+      <div class="PortfolioHolder">
+        <div class="ImageContainer"><img src=Draw2Map.png> </div>
+          <p class = "ProjectText"><span class="ProjectTitle" style>Draw2Route</span>Draw2Route is a hackathon winning project [Won RythmHacks 2025 Algorithms Category] that maps user's drawings to walkable/runnable routes. I worked on the backend implementing Dijiska's algorithm to find the shortest path between snapped "nodes"
+          </p>
+          <div class = "BottomText"> <a href = "https://draw2route.adamturaj.com/" target = "_blank" class = "GithubLink" style ="left:5%; color:rgba(0,0,255,0.5); border-color:rgba(0,0,255,0.5); border-width: 2px">TRY IT</a><a href = "https://github.com/JasonLiang12321/draw3route" target = "_blank" class = "GithubLink">View Github</a></div>
+         </div>
       <div class="PortfolioHolder" id="1">
-        <div class="ImageContainer"><img src=OvertaleMain.png></div>
+        <div class="ImageContainer"><img src=OvertaleMain.png> </div>
+        
           <p class = "ProjectText"><span class="ProjectTitle" style>Overtale</span>Overtale is a unique 2D java survival game built using the java SWING library. The game includes interactive graphics and sound design, different levels, and a tutorial system. 
           </p>
           <div class = "BottomText"> <p class = "skills">Java &middot; OOP &middot; Game Design</p><a href = "https://github.com/JasonLiang12321/overtale" target = "_blank" class = "GithubLink">View Github</a></div>
@@ -55,11 +62,21 @@
   </div>
   <div class="PhotoGallery">
     <div class="ReturnToPortfolio"><p>Return to Portfolio</p></div>
+    
     <div class="PhotoImageContainer">
       <div class="IndividualPhotoContainer">
-      <img src="/Photos/1.png">
-      <div class="Overlay"> <span class="ProjectTitle">GRAVITY</span>Red objects has a pulling (gravitational) force that scales to it's size and will pull the white (test) object towards it</div>
+        <video loop autoplay muted><source src="/Photos/Heart.mov"> </video>
+        <div class="Overlay"><span class ="ProjectTitle">DRAW2ROUTE</span>A demonstration of the full project with the front end and the backend. The user draws a shape and then inserts it to somewhere on the globe. Afterwards, the algorithm runs to snap to the best fit roads/walkable routes</div>
+      </div>
+    <div class="IndividualPhotoContainer">
+      <video loop autoplay muted> <source src="/Photos/Stickman.mov"> </video>
+      <div class="Overlay"><span class ="ProjectTitle">DRAW2ROUTE</span>A demonstration of the full project with a stickman</div>
     </div>
+    <div class="IndividualPhotoContainer">
+      <img src="/Photos/Stickman.png"> 
+      <div class="Overlay"><span class ="ProjectTitle">DRAW2ROUTE</span>A showcase of just the backend. The blue line are all the walkable paths in an area. The red line is what the user draws, while the green dots be the closests "snapped" nodes onto a walkable path. Afterwards, Dijiska's algorithm runs between every node to find the shortest ways to connect each node [NOTE, this gets more accurate on the actual website with more nodes]</div>
+    </div>
+    
     <div class="IndividualPhotoContainer">
       <img src="/Photos/2.png"> 
       <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A tutorial can be played as "level 1", players die if they reach a size of 0. Red enemies decreases users size by 1, green enemies "heal" users by 3 and flashing-color enemies will instantly kill users</div>
@@ -73,16 +90,41 @@
       <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A portion of the tutorial</div>
     </div>
     <div class="IndividualPhotoContainer">
-      <img src="/Photos/5.gif"> 
-      <div class="Overlay"><span class ="ProjectTitle">GRAVITY</span>A demonstration of how placing a gravitational object will curve the trajectory of an object depending on it's velocity</div>
+      <img src="/Photos/11.png"> 
+      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>Another part of the tutorial</div>
+    </div>
+    <div class="IndividualPhotoContainer">
+      <img src="/Photos/15.png"> 
+      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>The final part of the tutorial</div>
     </div>
     <div class="IndividualPhotoContainer">
       <img src="/Photos/6.gif"> 
       <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A portion of the "endless" mode</div>
     </div>
     <div class="IndividualPhotoContainer">
+      <img src="/Photos/13.gif"> 
+      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A part of Level 3, showing for sometimes "healing" is bad as it will increase the player's hitbox</div>
+    </div>
+    <div class="IndividualPhotoContainer">
+      <img src="/Photos/14.gif"> 
+      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A part of Level 3, same part as above but showcasing what happens when a player "heals" too much.</div>
+    </div>
+   
+    <div class="IndividualPhotoContainer">
+      <img src="/Photos/1.png">
+      <div class="Overlay"> <span class="ProjectTitle">GRAVITY</span>Red objects has a pulling (gravitational) force that scales to it's size and will pull the white (test) object towards it</div>
+    </div>
+    <div class="IndividualPhotoContainer">
       <img src="/Photos/7.png"> 
       <div class="Overlay"><span class ="ProjectTitle">GRAVITY</span>Users can place as many objects as they want. Blue objects has a "repulsive" force with the same magnitude as that of the red objects [scales with size]</div>
+    </div>
+    <div class="IndividualPhotoContainer">
+      <img src="/Photos/5.gif"> 
+      <div class="Overlay"><span class ="ProjectTitle">GRAVITY</span>A demonstration of how placing a gravitational object will curve the trajectory of an object depending on it's velocity</div>
+    </div>
+    <div class="IndividualPhotoContainer">
+      <img src="/Photos/12.png"> 
+      <div class="Overlay"><span class ="ProjectTitle">GRAVITY</span>Users can click on 2 points to draw a vector between the points [shown by the green line/arrow], which will give the test object the acceleration of that vector</div>
     </div>
     <div class="IndividualPhotoContainer">
       <img src="/Photos/8.png">
@@ -96,26 +138,8 @@
       <img src="/Photos/10.png"> 
       <div class="Overlay"> <span class ="ProjectTitle">SKEWB</span>The compressed version of the above file [37.8 MB]. All states are stored as 64 bit unsigned integers and solutions as 32 bit unsigned integers. Designed to be small enough to be able to fit on a VEX Robot brain [for a future project]</div>
     </div>
-    <div class="IndividualPhotoContainer">
-      <img src="/Photos/11.png"> 
-      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>Another part of the tutorial</div>
-    </div>
-    <div class="IndividualPhotoContainer">
-      <img src="/Photos/12.png"> 
-      <div class="Overlay"><span class ="ProjectTitle">GRAVITY</span>Users can click on 2 points to draw a vector between the points [shown by the green line/arrow], which will give the test object the acceleration of that vector</div>
-    </div>
-    <div class="IndividualPhotoContainer">
-      <img src="/Photos/13.gif"> 
-      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A part of Level 3, showing for sometimes "healing" is bad as it will increase the player's hitbox</div>
-    </div>
-    <div class="IndividualPhotoContainer">
-      <img src="/Photos/14.gif"> 
-      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>A part of Level 3, same part as above but showcasing what happens when a player "heals" too much.</div>
-    </div>
-    <div class="IndividualPhotoContainer">
-      <img src="/Photos/15.png"> 
-      <div class="Overlay"><span class ="ProjectTitle">OVERTALE</span>The final part of the tutorial</div>
-    </div>
+   
+    
 
     
       </div>
