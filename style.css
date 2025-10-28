@@ -193,7 +193,7 @@ body{
   max-width: 600px;
   padding: min(1.5vw, 20px);
   position:relative;
-  top:34.5%;
+  top:30%;
   box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
@@ -209,7 +209,6 @@ body{
   letter-spacing: 1%;
   color: #ff8c00;
   display: block;
-  margin-bottom: 3%;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
