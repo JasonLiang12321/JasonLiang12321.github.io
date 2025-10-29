@@ -184,7 +184,7 @@ body{
   margin-top:5%;
   font-family: "Poppins";
   color: black;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.5rem, 2.5vw, 1.4rem);
   line-height: 1.4;
   max-width: 600px;
   padding: min(1.5vw, 20px);
@@ -333,7 +333,26 @@ body{
   .ProjectTitle{
     margin-top:2%;
   }
+  .PortfolioHolder{
+    width:80vw;
+    
+  }
+  .ProjectText{
+    font-size:1rem;
+  }
+  .GithubLink{
+    font-size:0.8rem;
+  }
  
+}
+@media (hover: none){
+  *:hover {
+    transform: none !important;
+    color: inherit !important;
+    background: inherit !important;
+    filter: none !important;
+    text-shadow: none !important;
+  }
 }
 .PhotoImageContainer{
 width: 90%;
