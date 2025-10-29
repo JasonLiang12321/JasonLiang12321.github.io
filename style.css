@@ -153,8 +153,8 @@ body{
   border-width: 5px;
   border-style: solid;
   position: relative;
-  height: max(70vh,750px);
-  width: clamp(30px,400px,70vw);
+  height: 700px;
+  width: 400px;
   background-color: antiquewhite;
   border-radius: 10px;
   z-index: 0;
@@ -184,8 +184,8 @@ body{
   margin-top:5%;
   font-family: "Poppins";
   color: black;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 24px;
+  line-height: 1.5;
   max-width: 600px;
   padding: min(1.5vw, 20px);
   position:relative;
