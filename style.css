@@ -345,15 +345,7 @@ body{
   }
  
 }
-@media (hover: none){
-  *:hover {
-    transform: none !important;
-    color: inherit !important;
-    background: inherit !important;
-    filter: none !important;
-    text-shadow: none !important;
-  }
-}
+
 .PhotoImageContainer{
 width: 90%;
 margin: 0 auto;
