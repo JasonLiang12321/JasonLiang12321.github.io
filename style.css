@@ -343,6 +343,9 @@ body{
   .GithubLink{
     font-size:0.8rem;
   }
+  .PortfolioPage, .PhotoGallery{
+    -webkit-overflow-scrolling: touch;
+  }
  
 }
 

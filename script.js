@@ -12,6 +12,7 @@ const PhotoGalleryButton = document.querySelector(".PhotoGalleryButton");
 const PhotoGallery = document.querySelector(".PhotoGallery");
 const ReturnToPortfolio = document.querySelector(".ReturnToPortfolio");
 const ImageGalleryContainers = document.querySelectorAll(".IndividualPhotoContainer")
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
 function hoverover(e){
     Cursor.style.width = "30px";
     Cursor.style.height = "30px";
