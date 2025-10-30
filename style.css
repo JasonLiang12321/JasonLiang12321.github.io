@@ -184,7 +184,7 @@ body{
   margin-top:5%;
   font-family: "Poppins";
   color: black;
-  font-size: clamp(0.5rem, 3vh, 1.4rem);
+  font-size: clamp(0.5rem, 3vh, 1.5rem);
   line-height: 1.4;
   max-width: 600px;
   padding: min(1.5vw, 20px);
@@ -223,9 +223,10 @@ body{
 }
 .BottomText{
   width:100%;
-  height:7.5%;
+  height: 4vh;
+  transform: translate(0,-100%);
   position:absolute;
-  top:92.5%;
+  top:100%;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background: rgba(0, 0, 0, 0.05);
   cursor:none;
@@ -235,7 +236,6 @@ body{
   background: rgba(0, 0, 0, 0.1); 
 }
 .skills{
-  
   display: inline-block;
   font-size:  min(3vw, 15px);
   font-style: italic;
@@ -251,7 +251,10 @@ body{
 }
 .GithubLink {
   font-family: "Poppins", sans-serif;
-  font-size: min(3vh, 18px);
+  font-size: 1.1rem;
+  display:inline-block;
+  top:5%;
+  right:3%;
   padding: 2% 3%;
   text-decoration: none;
   color: rgba(255,0,0,0.5);
@@ -263,8 +266,7 @@ body{
   transition: all 0.3s ease;
   font-weight: 600;
   position:absolute;
-  top:10%;
-  left: 63%;
+
 }
 
 .GithubLink:hover {
