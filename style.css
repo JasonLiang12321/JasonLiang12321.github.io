@@ -142,6 +142,7 @@ body{
   top:-10%;
   column-gap:30px;
   max-width: 90vw;
+  margin:0 auto;
 
 }
 
@@ -152,7 +153,7 @@ body{
   border-width: 5px;
   border-style: solid;
   position: relative;
-  height: max(600px,70vh);
+  height: 70vh;
   width: min(400px,60vw);
   background-color: antiquewhite;
   border-radius: 10px;
