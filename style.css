@@ -279,7 +279,6 @@ body{
 .GithubLink:hover {
   color: #fff3e0;
   background: rgba(255, 140, 0, 0.15);
-  transform: translateY(-2px);
 }
 .PhotoGalleryButton {
   font-size: max(2vw,10px);
